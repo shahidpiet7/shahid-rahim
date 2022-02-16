@@ -1,6 +1,25 @@
 .container {
   padding: 0 2rem;
 }
+.darkMode {
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid #333;
+  border-radius: 4px;
+  line-height: 1;
+  transition: all 0.25s ease-in;
+  &:hover{
+    background-color: #fff;
+  }
+  &_sun {
+    color: #333;
+  }
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .main {
   min-height: 100vh;

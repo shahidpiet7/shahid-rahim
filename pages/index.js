@@ -23,7 +23,7 @@ export default function Home() {
   // }, [mounted, setMounted])
 
   const hndleDarkMode = () => {
-    if(theme === 'dark'){
+    if (theme === 'dark') {
       setTheme('light')
     } else {
       setTheme('dark')
@@ -39,17 +39,17 @@ export default function Home() {
 
       <main className={styles.main}>
         {mounted && (
-        <button onClick={hndleDarkMode} className={styles.darkMode}>
-          {(theme === 'dark') ? (
-            <span className={styles.darkMode_sun}>
-              <FaSun />
-            </span>
-          ) : (
-            <span className={styles.darkMode_moon}>
-              <FaRegMoon />
-            </span>
-          )}{' '}
-        </button>
+          <button onClick={hndleDarkMode} className={styles.darkMode}>
+            {theme === 'dark' ? (
+              <span className={styles.darkMode_sun}>
+                <FaSun />
+              </span>
+            ) : (
+              <span className={styles.darkMode_moon}>
+                <FaRegMoon />
+              </span>
+            )}{' '}
+          </button>
         )}
         <h1 className={styles.title}>Shahid Rahim</h1>
         <h2>Front end engineer</h2>
@@ -85,7 +85,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a href="" target="_blank" rel="noopener noreferrer">
-          Powered by <span className={styles.logo}>shahid-rahim</span>
+          Powered by: <span> shahid-rahim</span>
         </a>
       </footer>
     </div>

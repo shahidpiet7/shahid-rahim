@@ -1,9 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-$white-95: #fafafa;
-$yellow: #f7df1e;
+@import 'modules/variables';
 
 html {
   --purple: #f5ebff;
@@ -26,31 +21,10 @@ html.dark {
   --whitestrip: #f7df1e;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@import 'modules/font';
+@import 'modules/default';
 
-// html.dark progress[value]::-webkit-progress-value {
-//   background-color: var(--primary);
-// }
-
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import '../components/CustomCursor/customCursor.scss';
 
 .backStrip {
   background-color: var(--whitestrip);

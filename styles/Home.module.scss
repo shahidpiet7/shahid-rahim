@@ -9,13 +9,13 @@
   border-radius: 4px;
   line-height: 1;
   transition: all 0.25s ease-in;
-  &:hover{
+  &:hover {
     background-color: #fff;
   }
   &_sun {
     color: #333;
   }
-  svg{
+  svg {
     width: 20px;
     height: 20px;
   }
@@ -33,6 +33,7 @@
 
 .footer {
   display: flex;
+  justify-content: center;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
@@ -41,10 +42,10 @@
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  color: #333;
 }
 
 .title a {
@@ -120,11 +121,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
